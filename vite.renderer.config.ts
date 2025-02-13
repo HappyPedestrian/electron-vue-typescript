@@ -2,7 +2,7 @@ import { resolve } from 'node:path'
 
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import autoEslint from 'vite-plugin-eslint2'
+import eslintPlugin from 'vite-plugin-eslint2'
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -16,11 +16,8 @@ export default defineConfig({
   },
   plugins: [
     vue(),
-    autoEslint({
+    eslintPlugin({
       cache: true,
-      // fix 配置是否进行格式化
-      fix: false,
-      eslintPath: 'eslint',
       lintOnStart: false,
       include: ['src/**/*.ts', 'src/**/*.tsx', 'src/**/*.js', 'src/**/*.jsx', 'src/**/*.vue'],
       emitWarning: true,
