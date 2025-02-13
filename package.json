@@ -13,7 +13,7 @@
     "make:test": "cross-env VITE_CONFIG_MODE=test electron-forge make",
     "make:prod": "cross-env VITE_CONFIG_MODE=production electron-forge make",
     "publish": "electron-forge publish",
-    "lint": "eslint ."
+    "lint": "eslint --cache ."
   },
   "devDependencies": {
     "@electron-forge/cli": "^7.6.1",
@@ -49,10 +49,15 @@
     "vite-plugin-eslint2": "^5.0.3",
     "vue-tsc": "^2.1.10"
   },
-  "keywords": [],
+  "keywords": [
+    "electron",
+    "vue",
+    "vite",
+    "typescript"
+  ],
   "author": {
-    "name": "pedy",
-    "email": "pedy@lednets.com"
+    "name": "HappyPedestrion",
+    "email": "happypedestrion@foxmail.com"
   },
   "license": "MIT",
   "dependencies": {
